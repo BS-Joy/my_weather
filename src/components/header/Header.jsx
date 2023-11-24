@@ -23,7 +23,7 @@ const Header = ({unit}) => {
     return (
         <>
             <div className="header eleme nav">
-                <h1 className='mobile-logo'>My Weather...!</h1>
+                <h1 className='mobile-logo'>Wind Light...💡</h1>
                 <form className="search" onSubmit={onSubmit}>
                     <LuSearch className='icon' />
                     <input onChange={grabLocation} className='search-field'  placeholder='Search for places...' type="text" />
