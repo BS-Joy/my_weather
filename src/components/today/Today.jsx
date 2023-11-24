@@ -21,7 +21,7 @@ const Today = ({today, unit}) => {
     return (
         <>
             <div className="today eleme">
-                <h1 className='logo'>My Weather...!</h1>
+                <h1 className='logo'>Wind Light...💡</h1>
                 <div className="img-container">
                    <img src={today.current.condition.icon} alt="weather" />
                 </div>
