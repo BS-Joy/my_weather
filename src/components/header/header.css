@@ -1,0 +1,89 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    padding: 2rem 30px 1rem 1rem;
+}
+
+.mobile-logo {
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    display: none;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    position: absolute;
+    left: 5%;
+    color: rgb(197, 189, 189);
+}
+
+.search-field {
+    padding: 8px 0 8px 32px;
+    border-radius: 4px;
+    border: 1px solid rgb(197, 189, 189);
+    min-width: 200px;
+    background-color: transparent;
+}
+
+.search-field::placeholder {
+    color: black;
+}
+
+.search-field:focus {
+    outline: none;
+}
+
+.search-button {
+    position: absolute;
+    right: 5%;
+    padding: 0 5px;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.unit-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.toggler {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.active {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 835px) {
+    .mobile-logo {
+        display: block;
+    }
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+.inline {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.img-container {
+    /*background-color: red;*/
+    display: flex;
+    justify-content: center;
+}
+
+.img-container img {
+    width: 100px;
+}
+
+.temperature {
+    font-size: 70px;
+    font-weight: 100;
+}
+
+.day {
+    font-weight: 200;
+}
+
+.time {
+    color: rgb(177, 184, 190);
+}
+
+.divider {
+    height: 2px;
+    background-color: rgb(231, 234, 237);
+    margin-block: .5rem;
+}
+
+.today-weather {
+    margin-bottom: 1rem;
+}
+
+.rain {
+    margin-bottom: 0.5rem;
+}
+
+.location-text {
+    display: none;
+}
+
+.location-img {
+    position: relative;
+}
+
+.location-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.img-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}

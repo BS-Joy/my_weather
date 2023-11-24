@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Lobster&display=swap');
+@import url('https://db.onlinewebfonts.com/c/150037e11f159dca84bc4c04549094b6?family=Averta-Regular');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-color: rgb(225, 229, 233);
+    /* background-color: red; */
+    height: 100vh;
+    padding: 2.8rem;
+    font-family: 'Averta-Regular', sans-serif;
+}
+
+.container {
+    background-color: aliceblue;
+    height: 100%;
+    display: grid;
+    grid-template: 55px max-content 1fr / repeat(12, 1fr);
+    grid-gap: 1rem;
+    border-radius: 1rem;
+    overflow: auto;
+}
+
+.eleme {
+    height: 100%;
+    width: 100%;
+}
+
+.animation {
+    transition: all ease 2s;
+}
+
+.logo {
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.header {
+    grid-column: 4 / -1;
+}
+
+.today {
+    background-color: white;
+    grid-column: 1 / span 3;
+    grid-row: 1 / 4;
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.week {
+    grid-column: 4 / -1;
+}
+
+.highlights {
+    grid-column: 4 / -1;
+}
+
+@media (max-width: 1160px) {
+    .header {
+        grid-column: 5 / -1;
+    }
+    
+    .today {
+        grid-column: 1 / span 4;
+    }
+    
+    .week {
+        grid-column: 5 / -1;
+    }
+    
+    .highlights {
+        grid-column: 5 / -1;
+    }
+}
+
+@media (max-width: 835px) {
+    .main {
+        padding: 1.8rem;
+    }
+    .container {
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 0;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .header {
+        grid-column: 1 / -1;
+    }
+    .today {
+        grid-column: 1 / -1;
+        grid-row: auto;
+    }
+    .week {
+        grid-column: 1 / -1;
+    }
+    .highlights {
+        grid-column: 1 / -1;
+    }
+    
+}
